@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Meal For Your Ingredients</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="search-container">
+          <h2 class="title">Explore recipes based on your given ingredient</h2>
+          <blockquote>
+            "You don't have to cook fancy or complicated masterpieces - just
+            good from fresh ingredients."<br />
+            <cite>- Julia Child</cite>
+          </blockquote>
+
+          <div class="search-box-container">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Enter an ingredient..."
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="meal-found">
+          <h2 class="title">Meal ideas based on your search:</h2>
+          <div id="meal"></div>
+        </div>
+
+        <div class="meal-details">
+          <!-- close-btn -->
+          <button type="button" class="btn close-btn" id="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+
+          <!-- meal content -->
+          <div class="meal-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
